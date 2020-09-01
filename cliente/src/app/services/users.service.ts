@@ -11,9 +11,9 @@ import { Debito } from '../Models/Debito';
   providedIn: 'root'
 })
 export class UsersService {
- API_URI='http://3.136.159.21:3000/users';
- API_URI2='http://3.136.159.21:3000/transactions';
- API_URI3='http://3.136.159.21:3000/solicitudes';
+ API_URI='http://3.131.100.246:3000/users';
+ API_URI2='http://3.131.100.246:3000/transactions';
+ API_URI3='http://3.131.100.246:3000/solicitudes';
   headers=new HttpHeaders({
     "x-access-token":localStorage.getItem('accessToken')
   });
