@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="#">BANPEPITOS </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/principalc" routerLinkActive="active"><i class="fas fa-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/scredito" routerLinkActive="active"><i class="fas fa-plus-circle"></i>CREDITO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/transactions" routerLinkActive="active"><i class="fas fa-money-check-alt"></i>TRANSACCIONES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/transferencia" routerLinkActive="active"><i class="fas fa-people-arrows"></i>TRANSFERENCIA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/missolicitudes" routerLinkActive="active"><i class="fas fa-clipboard-list"></i>SOLICITUDES</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/" routerLinkActive="active"><i class="fas fa-sign-out-alt"></i>SALIR</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="col-md-4-offset-md-2">
+    <div class="card card-body text-center">
+      <h3>Nombre de usuario: {{nombre_usuario}}</h3>
+      <h3>Codigo de usuario: {{codigo_usuario}}</h3>
+      <h3>Numero de cuenta: {{no_cuenta}}</h3>
+      <h3>Saldo de la cuenta: Q{{saldo_cuenta}}</h3>
+    </div>
+</div>
+<footer class="card card-body">
+  <p>Nombre de usuario: {{nombre_usuario}},
+  Codigo de usuario: {{codigo_usuario}},
+  Numero de cuenta: {{no_cuenta}}</p>
+</footer>

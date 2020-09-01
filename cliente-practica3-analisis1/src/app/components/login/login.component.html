@@ -1,0 +1,30 @@
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <div class="card">
+          <div class="card text-center">
+                  <div class="card-header d-flex justify-content-between align-items-center bg-dark text-white">
+                      LogIn
+                  </div>
+                  </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <input name="codigo" type="number" placeholder="Codigo de usuario" [(ngModel)]="log.codigo_usuario" class="form-control"autofocus>
+                </div>
+                <div class="form-group">
+                  <input name="nombre" placeholder="Nombre de usuario" [(ngModel)]="log.nombre_usuario"  class="form-control">
+              </div>
+                <div class="form-group">
+                      <input type="password" name="contrasena"  placeholder="Contrasena" [(ngModel)]="log.contrasenia" class="form-control">
+                  </div>
+                <button class="btn btn-success btn-block" (click)="LogIn()">
+                    LOGIN
+                </button>
+                <button class="btn btn-success btn-block" (click)="Registrar()">
+                  ¿AUN NO TIENES UNA CUENTA?
+                </button>
+            </form>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="#">BANPEPITOS </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/principalc" routerLinkActive="active"><i class="fas fa-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/scredito" routerLinkActive="active"><i class="fas fa-plus-circle"></i>CREDITO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/transactions" routerLinkActive="active"><i class="fas fa-money-check-alt"></i>TRANSACCIONES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/transferencia" routerLinkActive="active"><i class="fas fa-people-arrows"></i>TRANSFERENCIA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/missolicitudes" routerLinkActive="active"><i class="fas fa-clipboard-list"></i>SOLICITUDES</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/" routerLinkActive="active"><i class="fas fa-sign-out-alt"></i>SALIR</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="card">
+  <div class="card text-center">
+          <div class="card-header d-flex justify-content-between align-items-center bg-dark text-white">
+              LogIn
+          </div>
+          </div>
+<div class="card-body">
+    <form>
+        <div class="form-group">
+            <input name="codigo" type="number" placeholder="No. de cuenta a transferir" [(ngModel)]="tran.no_cuenta_destino" class="form-control"autofocus>
+        </div>
+        <div class="form-group">
+          <input name="nombre" type="number" placeholder="Monto" [(ngModel)]="tran.monto" class="form-control">
+      </div>
+        <button class="btn btn-success btn-block" (click)="Transferencia()">
+            TRANSFERIR
+        </button>
+    </form>
+</div>
+<footer class="card card-body">
+  <p>Nombre de usuario: {{nombre_usuario}},
+  Codigo de usuario: {{codigo_usuario}},
+  Numero de cuenta: {{no_cuenta}}</p>
+</footer>

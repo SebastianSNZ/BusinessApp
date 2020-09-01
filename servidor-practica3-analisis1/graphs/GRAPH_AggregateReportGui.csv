@@ -1,0 +1,4 @@
+Etiqueta,# Muestras,Media,Mediana,90% Line,95% Line,99% Line,Mín,Máx,% Error,Rendimiento,Kb/sec,Desv. Estándar
+Login,75,1032,746,1976,2599,2922,422,3041,0.00%,.8,.5,660.96
+Transferencia Bancaria,75,4261,3448,7577,9771,11444,1523,12808,0.00%,.8,.2,2724.59
+Total,150,2646,1813,6632,7577,11444,422,12808,0.00%,1.6,.7,2556.75
